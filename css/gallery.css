@@ -2,7 +2,7 @@
 
 .intro-tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: var(--section-spacing);
 }
@@ -11,17 +11,17 @@
     padding: 32px;
     border-radius: 8px;
     color: var(--bg-white);
-    min-height: 160px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all var(--transition-medium) var(--easing);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .intro-tile:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .intro-tile h2 {
