@@ -1,0 +1,115 @@
+/* Timeline Specific Styles */
+
+.timeline {
+    position: relative;
+    margin-bottom: var(--section-spacing);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+    align-items: start;
+}
+
+.timeline-year {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--metro-blue);
+    text-align: right;
+    padding-top: 24px;
+    letter-spacing: 0.02em;
+}
+
+.timeline-content {
+    padding: var(--tile-padding);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-medium) var(--easing);
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content h2 {
+    font-size: var(--h2-size);
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--bg-white);
+    letter-spacing: 0.02em;
+}
+
+.timeline-content h3 {
+    font-size: var(--h3-size);
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--bg-white);
+    opacity: 0.95;
+}
+
+.timeline-content p {
+    font-size: var(--body-size);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--bg-white);
+    opacity: 0.95;
+}
+
+.timeline-features {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.timeline-features li {
+    font-size: var(--small-size);
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    color: var(--bg-white);
+    opacity: 0.9;
+}
+
+.timeline-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline-item {
+        grid-template-columns: 80px 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    
+    .timeline-year {
+        font-size: 32px;
+        padding-top: 16px;
+    }
+    
+    .timeline-content h2 {
+        font-size: 32px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .timeline-year {
+        font-size: 36px;
+        text-align: left;
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles | Metro Design Language</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/principles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="nav-header">
+            <h1 class="nav-title">Metro</h1>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="designers.html">Designers</a></li>
+            <li><a href="principles.html" class="active">Principles</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <header class="hero">
+            <h1 class="hero-title">Principles</h1>
+            <p class="hero-subtitle">The foundation of Metro and Fluent design</p>
+        </header>
+
+        <section class="principle-section">
+            <div class="principle-card tile-blue">
+                <div class="principle-number">01</div>
+                <h2>Content Before Chrome</h2>
+                <p class="principle-tagline">Information over decoration</p>
+                <div class="principle-content">
+                    <p>The most fundamental Metro principle: prioritize the user's content and information over interface decoration. Every pixel of the interface should serve the user's goals, not just make the UI look "pretty."</p>
+                    
+                    <h3>What this means:</h3>
+                    <ul>
+                        <li>Remove unnecessary visual elements</li>
+                        <li>Let content fill the screen, not margins</li>
+                        <li>Use typography to organize, not decorative elements</li>
+                        <li>Interface should recede, content should shine</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Example</h4>
+                        <p>Windows Phone 7's home screen showed live tiles with actual content (calendar appointments, messages, photos) instead of static app icons. The tiles themselves were the content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-magenta">
+                <div class="principle-number">02</div>
+                <h2>Typography as Primary Element</h2>
+                <p class="principle-tagline">Dramatically large, purposeful type</p>
+                <div class="principle-content">
+                    <p>Metro uses typography as the primary design element. Dramatically large headings (72-96px) create visual hierarchy through size and weight, not decoration or color.</p>
+                    
+                    <h3>Typography rules:</h3>
+                    <ul>
+                        <li>Segoe UI typeface (or similar humanist sans-serif)</li>
+                        <li>Hero text: 72-96px (dominates the screen)</li>
+                        <li>Clear hierarchy through size, not ornamentation</li>
+                        <li>Generous letter-spacing for large text</li>
+                        <li>Sentence case preferred over ALL CAPS</li>
+                        <li>Left-aligned (strong flush-left)</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Typography Scale</h4>
+                        <p>Hero: 72-96px • H1: 48-56px • H2: 36-42px • H3: 28-32px • Body: 14-16px</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-teal">
+                <div class="principle-number">03</div>
+                <h2>Authentically Digital</h2>
+                <p class="principle-tagline">No skeuomorphism, embrace the medium</p>
+                <div class="principle-content">
+                    <p>Digital interfaces should look digital. Metro rejected the fake leather, wood grain, and torn paper of skeuomorphic design. The screen is not paper or physical material—it's light, pixels, and information.</p>
+                    
+                    <h3>This means:</h3>
+                    <ul>
+                        <li>Flat colors, no fake textures</li>
+                        <li>No shadows imitating physical depth (Metro) or subtle only (Fluent)</li>
+                        <li>Digital affordances (color, type) over physical metaphors</li>
+                        <li>Honest to the medium</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>The Problem Metro Solved</h4>
+                        <p>iOS 6 and earlier used fake leather in Calendar, felt in Game Center, torn paper in Notes. Metro said: "This is dishonest. Digital should celebrate being digital."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-orange">
+                <div class="principle-number">04</div>
+                <h2>Bold, Systematic Color</h2>
+                <p class="principle-tagline">Flat colors create organization</p>
+                <div class="principle-content">
+                    <p>Metro uses bold, flat colors systematically. Each color has purpose and creates clear visual organization. High contrast (white text on colored backgrounds) ensures readability.</p>
+                    
+                    <h3>Color system:</h3>
+                    <ul>
+                        <li>Microsoft Blue (#0078D7) as primary</li>
+                        <li>Bold Metro palette: Magenta, Teal, Orange, Lime</li>
+                        <li>Flat colors (no gradients in pure Metro)</li>
+                        <li>High contrast required</li>
+                        <li>User-selectable accent color</li>
+                        <li>Neutral backgrounds (white/light gray)</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Color as Information</h4>
+                        <p>Each tile color could indicate app category or brand. Color blocks organize the interface spatially, like wayfinding signage in airports.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-cyan">
+                <div class="principle-number">05</div>
+                <h2>Fast & Fluid Motion</h2>
+                <p class="principle-tagline">200-300ms, natural ease-out</p>
+                <div class="principle-content">
+                    <p>Animations should feel responsive, not sluggish. Metro animations are fast (200-300ms) with ease-out timing that mimics natural deceleration. Motion connects elements and provides context.</p>
+                    
+                    <h3>Motion principles:</h3>
+                    <ul>
+                        <li>200-300ms duration (fast)</li>
+                        <li>Ease-out timing (starts fast, slows down)</li>
+                        <li>Connected animations (elements flow between views)</li>
+                        <li>Parallax effects (depth through layered motion)</li>
+                        <li>Never delay user actions</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Fluent Evolution</h4>
+                        <p>Fluent Design added "Reveal" (hover highlights), "Connected Animations" (elements morph between screens), and acrylic material (frosted glass effect) while maintaining fast timing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-purple">
+                <div class="principle-number">06</div>
+                <h2>Information Density</h2>
+                <p class="principle-tagline">Efficient use of space</p>
+                <div class="principle-content">
+                    <p>Metro interfaces pack more information on screen than consumer-focused designs. Professional software needs efficiency. Use space purposefully, not wastefully.</p>
+                    
+                    <h3>Density techniques:</h3>
+                    <ul>
+                        <li>Smaller body text (14-16px vs. 18-21px)</li>
+                        <li>Tighter, purposeful spacing</li>
+                        <li>Progressive disclosure (collapse details)</li>
+                        <li>Scrolling content (horizontal or vertical)</li>
+                        <li>Grid-based layouts maximize space</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Business Software</h4>
+                        <p>Microsoft Office, Teams, and Azure Portal demonstrate information density. Users need to see more data, more options, more context than simple consumer apps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="principle-card tile-lime">
+                <div class="principle-number">07</div>
+                <h2>Grid-Based Layout</h2>
+                <p class="principle-tagline">Strict alignment creates order</p>
+                <div class="principle-content">
+                    <p>Every element snaps to a grid. Metro's tile-based layouts (Live Tiles) created asymmetry within strict grid alignment. Varied tile sizes (1x1, 2x1, 1x2) provide visual interest while maintaining order.</p>
+                    
+                    <h3>Layout principles:</h3>
+                    <ul>
+                        <li>12-column responsive base grid</li>
+                        <li>Strict alignment (everything snaps)</li>
+                        <li>Tile proportions create asymmetry</li>
+                        <li>8-12px gaps between tiles</li>
+                        <li>24-32px margins from edges</li>
+                    </ul>
+                    
+                    <div class="example">
+                        <h4>Swiss Design Lineage</h4>
+                        <p>Metro's grid systems directly descended from Swiss Design's typographic grids. Josef Müller-Brockmann's poster layouts influenced Windows Phone's Start screen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Metro vs. Other Design Languages</h2>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h3>Metro vs. Material Design</h3>
+                    <p><strong>Metro/Fluent:</strong> Professional, utilitarian, information-dense, dramatic typography</p>
+                    <p><strong>Material:</strong> Playful, consumer-focused, spacious layouts, prominent shadows</p>
+                    <p><strong>Use case:</strong> Metro excels at business software and professional tools. Material better for consumer apps and mobile-first experiences.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Metro vs. iOS Design</h3>
+                    <p><strong>Metro/Fluent:</strong> Bold colors, tile-based, information-dense, Microsoft aesthetic</p>
+                    <p><strong>iOS:</strong> Minimal color, card-based, spacious, Apple aesthetic</p>
+                    <p><strong>Irony:</strong> iOS 7 (2013) copied Metro's flat design after years of skeuomorphism. Metro won the philosophical argument.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Metro vs. Swiss Design</h3>
+                    <p><strong>Metro/Fluent:</strong> Digital evolution of Swiss principles, motion and interaction, bold color</p>
+                    <p><strong>Swiss:</strong> Print-based, static, minimal color (B&W + spot)</p>
+                    <p><strong>Relationship:</strong> Metro is Swiss Design for digital interfaces—grid systems, typography hierarchy, and objective clarity adapted to screens.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">The Legacy</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Industry Transformation</h3>
+                    <p>Metro's 2010 debut fundamentally changed how the tech industry thought about digital design. By 2013, skeuomorphism was dead. Flat design became the standard.</p>
+                </div>
+                <div class="card">
+                    <h3>Typography Renaissance</h3>
+                    <p>Modern web design's embrace of large headings, dramatic scale, and typography-driven hierarchy traces directly to Metro's bold vision.</p>
+                </div>
+                <div class="card">
+                    <h3>Honest Design</h3>
+                    <p>"Authentically digital" became a rallying cry. Designers stopped imitating physical materials and started celebrating the unique properties of screens and pixels.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
